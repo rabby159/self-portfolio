@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md Rabby</title>
 
+    <!-- aos link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- favicon link  -->
     <link rel="shortcut icon" href="./images/connectdevelop.svg" type="image/x-icon">
 
@@ -23,7 +26,6 @@
             font-family: 'Space Grotesk', sans-serif;
         }
     </style>
-
     <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/5be871417b.js" crossorigin="anonymous"></script>
 
@@ -76,7 +78,7 @@
             <!-- main div  -->
             <div class="">
                 <!-- my info div  -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 mt-20 mb-10 p-5 gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-20 mb-10 p-5 gap-8">
                     <div class="">
                         <div class="bg-base-100 p-5 rounded-2xl shadow-xl">
                             <h1 class="text-black text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-slate-600 from-black ">Hello There, <br> I'm Md Rabby</h1>
@@ -86,36 +88,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 ">
-                        <div class="bg-base-100 p-5 rounded-2xl shadow-xl">
-                            <img class="" src="./images/aboutme.jpg" alt="">
-                            <h4 class="text-black text-xl font-medium text-center mt-8">More About Me</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 " >
+                        <div class="bg-base-100 p-5 rounded-2xl shadow-xl" data-aos="zoom-in">
+                            <div>
+                                <img class="" src="./images/aboutme.jpg" alt="">
+                                <h4 class="text-black text-xl font-medium text-center mt-8">More About Me</h4>
+                            </div>
                         </div>
-                        <div class="bg-base-100 p-5 rounded-2xl shadow-xl">
-                            <img class="" src="./images/project .jpg" alt="">
-                            <h4 class="text-black text-xl font-medium text-center mt-8">Project</h4>
+                        <div class="bg-base-100 p-5 rounded-2xl shadow-xl" data-aos="zoom-in">
+                            <div>
+                                <img class="" src="./images/project .jpg" alt="">
+                                <h4 class="text-black text-xl font-medium text-center mt-8">Project</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- more about and project div -->
                 <div class="grid grid-cols-1 md:grid-cols-6 gap-4 mb-20 p-5">
-                    <div class="bg-base-100 p-5 rounded-2xl shadow-xl">
-                        <img class="" src="./images/blog.jpg" alt="">
-                        <h4 class="text-black text-xl font-medium text-center mt-8">Blogs</h4>
-                    </div>
-                    <div class="bg-base-100 p-5 rounded-2xl shadow-xl md:col-start-2 md:col-span-4 ">
-                        <div class="text-center mt-16">
-                            <i class="fa-solid fa-paintbrush text-4xl md:text-4xl mr-2 md:mr-24"></i>
-                            <i class="fa-solid fa-laptop-code text-4xl md:text-4xl mr-2 md:mr-24"></i>
-                            <i class="fa-solid fa-ranking-star text-4xl md:text-4xl mr-2 md:mr-24"></i>
-                            <i class="fa-brands fa-creative-commons-sampling-plus text-4xl md:text-4xl "></i>
+                    <div class="bg-base-100 p-5 rounded-2xl shadow-xl" data-aos="zoom-in">
+                        <div>
+                            <img class="" src="./images/blog.jpg" alt="">
+                            <h4 class="text-black text-xl font-medium text-center mt-8">Blogs</h4>
                         </div>
-                        <h4 class="text-black text-xl font-medium text-center mt-8">Service Offering</h4>
                     </div>
-                    <div class="bg-base-100 p-5 rounded-2xl shadow-xl">
-                        <img class="" src="./images/profiles.jpg" alt="">
+                    <div class="bg-base-100 p-5 rounded-2xl shadow-xl md:col-start-2 md:col-span-4 " data-aos="zoom-in">
+                        <div>
+                            <div class="text-center mt-16">
+                                <i class="fa-solid fa-paintbrush text-4xl md:text-4xl mr-2 md:mr-24"></i>
+                                <i class="fa-solid fa-laptop-code text-4xl md:text-4xl mr-2 md:mr-24"></i>
+                                <i class="fa-solid fa-ranking-star text-4xl md:text-4xl mr-2 md:mr-24"></i>
+                                <i class="fa-brands fa-creative-commons-sampling-plus text-4xl md:text-4xl "></i>
+                            </div>
+                            <h4 class="text-black text-xl font-medium text-center mt-8">Service Offering</h4>
+                        </div>
+                    </div>
+                    <div class="bg-base-100 p-5 rounded-2xl shadow-xl" data-aos="zoom-in">
+                        <div>
+                            <img class="" src="./images/profiles.jpg" alt="">
                         <h4 class="text-black text-xl font-medium text-center mt-8">Profiles</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,54 +211,66 @@
                 <p class="my-5 text-[#333232] font-medium text-xl lg:text-2xl md:text-left text-justify">I have a diverse skill set in web development, encompassing everything from creative design to robust backend implementation.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- tech 1  -->
-                    <div class="bg-base-100 p-4 rounded shadow-lg">
-                        <i class="fa-brands fa-react text-3xl"></i>
-                        <h1 class="text-[#111] text-2xl font-bold">Front-End</h1>
-                        <p class="text-[#333232] font-medium">Experience with</p>
-                        <p class="text-[#333232] font-medium">Html, Css, Sass, Bootstrap,</p>
-                        <p class="text-[#333232] font-medium">TailwindCss, Javascript, ReactJS,</p>
-                        <p class="text-[#333232] font-medium">React-router, MaterialUI, Redux etc.</p>
+                    <div class="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                        <div>
+                            <i class="fa-brands fa-react text-3xl"></i>
+                            <h1 class="text-[#111] text-2xl font-bold">Front-End</h1>
+                            <p class="text-[#333232] font-medium">Experience with</p>
+                            <p class="text-[#333232] font-medium">Html, Css, Sass, Bootstrap,</p>
+                            <p class="text-[#333232] font-medium">TailwindCss, Javascript, ReactJS,</p>
+                            <p class="text-[#333232] font-medium">React-router, MaterialUI, Redux etc.</p>
+                        </div>
                     </div>
                     <!-- tech 2  -->
-                    <div class="bg-base-100 p-4 rounded shadow-lg">
-                        <i class="fa-solid fa-server text-3xl"></i>
-                        <h1 class="text-[#111] text-2xl font-bold">Backend</h1>
-                        <p class="text-[#333232] font-medium">Experience with</p>
-                        <p class="text-[#333232] font-medium">Node.js, MongoDb, Mongoose,</p>
-                        <p class="text-[#333232] font-medium">Firebase, JWT etc.</p>
+                    <div class="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                        <div>
+                            <i class="fa-solid fa-server text-3xl"></i>
+                            <h1 class="text-[#111] text-2xl font-bold">Backend</h1>
+                            <p class="text-[#333232] font-medium">Experience with</p>
+                            <p class="text-[#333232] font-medium">Node.js, MongoDb, Mongoose,</p>
+                            <p class="text-[#333232] font-medium">Firebase, JWT etc.</p>
+                        </div>
                     </div>
                     <!-- tech 3  -->
-                    <div class="bg-base-100 p-4 rounded shadow-lg">
-                        <i class="fa-brands fa-figma text-3xl"></i>
-                        <h1 class="text-[#111] text-2xl font-bold">Design</h1>
-                        <p class="text-[#333232] font-medium">Experience with</p>
-                        <p class="text-[#333232] font-medium">Tools like Figma, Adobe</p>
-                        <p class="text-[#333232] font-medium">PhotoShop, Adobe XD etc.</p>
+                    <div class="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                       <div>
+                            <i class="fa-brands fa-figma text-3xl"></i>
+                            <h1 class="text-[#111] text-2xl font-bold">Design</h1>
+                            <p class="text-[#333232] font-medium">Experience with</p>
+                            <p class="text-[#333232] font-medium">Tools like Figma, Adobe</p>
+                            <p class="text-[#333232] font-medium">PhotoShop, Adobe XD etc.</p>
+                       </div>
                     </div>
                     <!-- tech 4  -->
-                    <div class="bg-base-100 p-4 rounded shadow-lg">
-                        <i class="fa-brands fa-stack-overflow text-3xl"></i>
-                        <h1 class="text-[#111] text-2xl font-bold">Full-Stack</h1>
-                        <p class="text-[#333232] font-medium">Experience with</p>
-                        <p class="text-[#333232] font-medium">The React framework for</p>
-                        <p class="text-[#333232] font-medium">production NextJS.</p>
+                    <div class="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                        <div>
+                            <i class="fa-brands fa-stack-overflow text-3xl"></i>
+                            <h1 class="text-[#111] text-2xl font-bold">Full-Stack</h1>
+                            <p class="text-[#333232] font-medium">Experience with</p>
+                            <p class="text-[#333232] font-medium">The React framework for</p>
+                            <p class="text-[#333232] font-medium">production NextJS.</p>
+                        </div>
                     </div>
                     <!-- tech 5  -->
-                    <div class="bg-base-100 p-4 rounded shadow-lg">
-                        <i class="fa-solid fa-toolbox text-3xl"></i>
-                        <h1 class="text-[#111] text-2xl font-bold">Tools</h1>
-                        <p class="text-[#333232] font-medium">Experience with</p>
-                        <p class="text-[#333232] font-medium">Tools like Axios, Heroku,</p>
-                        <p class="text-[#333232] font-medium">Netlify, Firebase, Git, Github,</p>
-                        <p class="text-[#333232] font-medium">Gitlab, Jira, Slack etc.</p>
+                    <div class="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                        <div>
+                            <i class="fa-solid fa-toolbox text-3xl"></i>
+                            <h1 class="text-[#111] text-2xl font-bold">Tools</h1>
+                            <p class="text-[#333232] font-medium">Experience with</p>
+                            <p class="text-[#333232] font-medium">Tools like Axios, Heroku,</p>
+                            <p class="text-[#333232] font-medium">Netlify, Firebase, Git, Github,</p>
+                            <p class="text-[#333232] font-medium">Gitlab, Jira, Slack etc.</p>
+                        </div>
                     </div>
                     <!-- tech 6  -->
-                    <div class="bg-base-100 p-4 rounded shadow-lg">
-                        <i class="fa-solid fa-code text-3xl"></i>
-                        <h1 class="text-[#111] text-2xl font-bold">Still Learning</h1>
-                        <p class="text-[#333232] font-medium">Exploring at free time</p>
-                        <p class="text-[#333232] font-medium">GraphQL, Gatsby, Apollo,</p>
-                        <p class="text-[#333232] font-medium">Golang, MySql, React Native.</p>
+                    <div class="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                        <div>
+                            <i class="fa-solid fa-code text-3xl"></i>
+                            <h1 class="text-[#111] text-2xl font-bold">Still Learning</h1>
+                            <p class="text-[#333232] font-medium">Exploring at free time</p>
+                            <p class="text-[#333232] font-medium">GraphQL, Gatsby, Apollo,</p>
+                            <p class="text-[#333232] font-medium">Golang, MySql, React Native.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,36 +285,44 @@
                 <p class="my-5 text-[#333232] font-medium text-xl lg:text-2xl md:text-left text-justify">I'm a curious tech lover who always wants to learn, and I enjoy crafting awesome websites and digital creations!</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     <!-- about 1  -->
-                    <div class=" md:border-r-2">
-                        <div class="flex gap-1">
-                            <h1 class="text-[#111] text-2xl font-bold">2020</h1>
-                            <i class="fa-solid fa-feather-pointed text-2xl"></i>
+                    <div class=" md:border-r-2" data-aos="fade-right">
+                        <div>
+                            <div class="flex gap-1">
+                                <h1 class="text-[#111] text-2xl font-bold">2020</h1>
+                                <i class="fa-solid fa-feather-pointed text-2xl"></i>
+                            </div>
+                            <p class="text-[#333232] font-medium mt-3">Become Interested and start to learn front-end basics.</p>
                         </div>
-                        <p class="text-[#333232] font-medium mt-3">Become Interested and start to learn front-end basics.</p>
                     </div>
                     <!-- about 2  -->
-                    <div class="lg:border-r-2">
-                        <div class="flex gap-1">
-                            <h1 class="text-[#111] text-2xl font-bold">2021</h1>
-                            <i class="fa-solid fa-feather-pointed text-2xl"></i>
+                    <div class="lg:border-r-2" data-aos="fade-right">
+                        <div>
+                            <div class="flex gap-1">
+                                <h1 class="text-[#111] text-2xl font-bold">2021</h1>
+                                <i class="fa-solid fa-feather-pointed text-2xl"></i>
+                            </div>
+                            <p class="text-[#333232] font-medium mt-3">Took some Javascript course and build some small projects.</p>
                         </div>
-                        <p class="text-[#333232] font-medium mt-3">Took some Javascript course and build some small projects.</p>
                     </div>
                     <!-- about 3  -->
-                    <div class="md:border-r-2">
-                       <div class="flex gap-1">
+                    <div class="md:border-r-2" data-aos="fade-left">
+                       <div>
+                        <div class="flex gap-1">
                             <h1 class="text-[#111] text-2xl font-bold">2022</h1>
                             <i class="fa-solid fa-feather-pointed text-2xl"></i>
                        </div>
                         <p class="text-[#333232] font-medium mt-3">Started to learn modern technologies of front-end and backend.</p>
+                       </div>
                     </div>
                     <!-- about 4  -->
                     <div>
-                        <div class="flex gap-1">
-                            <h1 class="text-[#111] text-2xl font-bold">2023</h1>
-                            <i class="fa-solid fa-feather-pointed text-2xl"></i>
+                        <div data-aos="fade-left">
+                            <div class="flex gap-1">
+                                <h1 class="text-[#111] text-2xl font-bold">2023</h1>
+                                <i class="fa-solid fa-feather-pointed text-2xl"></i>
+                            </div>
+                            <p class="text-[#333232] font-medium mt-3">Started to build some project to enhance my knowledge.</p>
                         </div>
-                        <p class="text-[#333232] font-medium mt-3">Started to build some project to enhance my knowledge.</p>
                     </div>
                 </div>
             </div>
@@ -329,7 +361,7 @@
         <section class="max-w-screen-xl m-auto">
             <div class="mb-20 p-5">
                 <h1 class="text-[#111] text-4xl lg:text-5xl  font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r to-slate-600 from-black ">Contact</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="grid grid-cols-1 md:grid-cols-2" data-aos="fade-in">
                     <div>
                         <!-- contact 1  -->
                         <div class="flex items-center gap-x-8 mb-5">
@@ -390,7 +422,7 @@
         </div>
       </footer>
 
-
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/aos.js"></script>
 </body>
 </html>
